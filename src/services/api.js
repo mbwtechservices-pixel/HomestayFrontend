@@ -2,7 +2,7 @@ import axios from 'axios';
 
 // Use an environment-based API URL so production can talk directly to the backend
 // In Vercel, set VITE_API_URL=https://homestaybackend.onrender.com/api
-const apiBaseURL = import.meta.env.VITE_API_URL || 'https://homestaybackend.onrender.com/api';
+const apiBaseURL = 'https://homestaybackend.onrender.com/api';
 
 const api = axios.create({
   baseURL: apiBaseURL,
