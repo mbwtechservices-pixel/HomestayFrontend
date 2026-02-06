@@ -10,6 +10,8 @@ export default defineConfig({
         // target: 'http://localhost:9866',
         target: 'https://homestaybackend.onrender.com',
         changeOrigin: true,
+        secure: true,
+        rewrite: (path) => path,
       },
     },
   },
